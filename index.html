@@ -1,80 +1,85 @@
-<!DOCTYPE html>
+<!DOCTYPE doctype html>
 <html>
  <head>
-  <meta charset="utf-8"/>
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-  <title>
-   API Document
-  </title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <link href="./css/hack-extended.min.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="./css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-  <link href="./images/favicon.ico" rel="icon" type="image/x-icon"/>
-  <script src="https://code.jquery.com/jquery-1.11.3.js">
-  </script>
-  <script src="./js/energize.min.js" type="text/javascript">
-  </script>
-  <script src="./js/jquery.highlight.min.js" type="text/javascript">
-  </script>
-  <script src="./js/jquery_ui.min.js" type="text/javascript">
-  </script>
-  <script src="./js/jquery.tocify.min.js" type="text/javascript">
-  </script>
-  <script src="./js/lunr/lunr.min.js" type="text/javascript">
-  </script>
-  <!-- multi-language search -->
-  <script charset="UTF-8" src="./js/lunr/lunr.stemmer.support.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/tinyseg.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.da.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.de.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.du.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.es.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.fi.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.fr.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.hu.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.it.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.jp.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.no.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.pt.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.ro.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.ru.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.sv.js" type="text/javascript">
-  </script>
-  <script charset="UTF-8" src="./js/lunr/lunr.tr.js" type="text/javascript">
-  </script>
-  <!-- multi-language search -->
-  <script src="./js/lang.min.js?nocache=" type="text/javascript">
-  </script>
-  <script src="./js/search.js" type="text/javascript">
-  </script>
-  <script src="./js/toc.min.js" type="text/javascript">
-  </script>
-  <script>
-   $(function() {
+  <meta charset="utf-8">
+   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+     <title>
+      API Document
+     </title>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+     <link href="./css/hack-extended.min.css" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="./css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+     <link href="./images/favicon.ico" rel="icon" type="image/x-icon"/>
+     <script src="https://code.jquery.com/jquery-1.11.3.js">
+     </script>
+     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js">
+     </script>
+     <script src="./js/energize.min.js" type="text/javascript">
+     </script>
+     <script src="./js/jquery.highlight.min.js" type="text/javascript">
+     </script>
+     <script src="./js/jquery_ui.min.js" type="text/javascript">
+     </script>
+     <script src="./js/jquery.tocify.min.js" type="text/javascript">
+     </script>
+     <script src="./js/lunr/lunr.min.js" type="text/javascript">
+     </script>
+     <!-- multi-language search -->
+     <script charset="UTF-8" src="./js/lunr/lunr.stemmer.support.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/tinyseg.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.da.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.de.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.du.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.es.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.fi.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.fr.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.hu.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.it.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.jp.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.no.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.pt.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.ro.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.ru.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.sv.js" type="text/javascript">
+     </script>
+     <script charset="UTF-8" src="./js/lunr/lunr.tr.js" type="text/javascript">
+     </script>
+     <!-- multi-language search -->
+     <script src="./js/lang.min.js" type="text/javascript">
+     </script>
+     <script src="./js/search.min.js" type="text/javascript">
+     </script>
+     <script src="./js/toc.min.js" type="text/javascript">
+     </script>
+     <script>
+      $(function() {
         setupLanguages(
             
             ['shell', 'python', 'java']
             
         );
     });
-  </script>
+     </script>
+    </meta>
+   </meta>
+  </meta>
  </head>
  <body class="index">
   <a href="#" id="nav-button">
@@ -100,7 +105,8 @@
     </a>
    </div>
    <div class="search">
-    <input class="search" id="input-search" placeholder="Search" type="text"/>
+    <input class="search" id="input-search" placeholder="Search" type="text">
+    </input>
    </div>
    <ul class="search-results">
    </ul>
@@ -215,10 +221,28 @@
     </blockquote>
     <pre class="highlight shell">curl http://127.0.0.1/api/signin?id<span class="o">=</span><span class="nb">test</span>@gmail.com&amp;password<span class="o">=</span>1234 
 </pre>
+    <blockquote class="highlight shell">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text="curl http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234 
+" href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight python"><span class="kn">import</span> <span class="nn">requests</span>
 <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s">"id"</span><span class="p">:</span><span class="s">"test@gmail.com"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">:</span><span class="s">"1234"</span><span class="p">,</span> <span class="s">"nickname"</span><span class="p">:</span><span class="s">"sarada"</span><span class="p">}</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">"http://127.0.0.1/api/signup"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
 </pre>
+    <blockquote class="highlight python">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='import requests
+payload = {"id":"test@gmail.com", "password":"1234", "nickname":"sarada"}
+r = requests.post("http://127.0.0.1/api/signup", data=payload)
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <h2 id="response---json">
      Response - JSON
     </h2>
@@ -396,13 +420,40 @@
     </blockquote>
     <pre class="highlight shell">curl http://127.0.0.1/api/signin?id<span class="o">=</span><span class="nb">test</span>@gmail.com&amp;password<span class="o">=</span>1234 
 </pre>
+    <blockquote class="highlight shell">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text="curl http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234 
+" href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight python"><span class="kn">import</span> <span class="nn">requests</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234"</span><span class="p">)</span>
 </pre>
+    <blockquote class="highlight python">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='import requests
+r = requests.get("http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234")
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight java"><span class="n">HttpClient</span> <span class="n">httpclient</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
 <span class="n">HttpGet</span> <span class="n">httpget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpGet</span><span class="o">(</span><span class="s">"http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234"</span><span class="o">);</span>
 <span class="n">HttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">httpget</span><span class="o">);</span>
 </pre>
+    <blockquote class="highlight java">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='HttpClient httpclient = new DefaultHttpClient();
+HttpGet httpget = new HttpGet("http://127.0.0.1/api/signin?id=test@gmail.com&amp;password=1234");
+HttpResponse response = httpclient.execute(httpget);
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <h2 id="response---json">
      Response - JSON
     </h2>
@@ -565,13 +616,40 @@
     </blockquote>
     <pre class="highlight shell">curl http://127.0.0.1/notice?page<span class="o">=</span>1
 </pre>
+    <blockquote class="highlight shell">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text="curl http://127.0.0.1/notice?page=1
+" href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight python"><span class="kn">import</span> <span class="nn">requests</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="p">)</span>
 </pre>
+    <blockquote class="highlight python">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='import requests
+r = requests.get("http://127.0.0.1/notice?page=1")
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight java"><span class="n">HttpClient</span> <span class="n">httpclient</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
 <span class="n">HttpGet</span> <span class="n">httpget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpGet</span><span class="o">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="o">);</span>
 <span class="n">HttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">httpget</span><span class="o">);</span>
 </pre>
+    <blockquote class="highlight java">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='HttpClient httpclient = new DefaultHttpClient();
+HttpGet httpget = new HttpGet("http://127.0.0.1/notice?page=1");
+HttpResponse response = httpclient.execute(httpget);
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <h2 id="response---json">
      Response - JSON
     </h2>
@@ -888,13 +966,40 @@
     </blockquote>
     <pre class="highlight shell">curl http://127.0.0.1/notice?page<span class="o">=</span>1
 </pre>
+    <blockquote class="highlight shell">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text="curl http://127.0.0.1/notice?page=1
+" href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight python"><span class="kn">import</span> <span class="nn">requests</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="p">)</span>
 </pre>
+    <blockquote class="highlight python">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='import requests
+r = requests.get("http://127.0.0.1/notice?page=1")
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight java"><span class="n">HttpClient</span> <span class="n">httpclient</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
 <span class="n">HttpGet</span> <span class="n">httpget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpGet</span><span class="o">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="o">);</span>
 <span class="n">HttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">httpget</span><span class="o">);</span>
 </pre>
+    <blockquote class="highlight java">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='HttpClient httpclient = new DefaultHttpClient();
+HttpGet httpget = new HttpGet("http://127.0.0.1/notice?page=1");
+HttpResponse response = httpclient.execute(httpget);
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <h2 id="レスポンス--json">
      レスポンス- JSON
     </h2>
@@ -1234,13 +1339,40 @@ http://qlemon.net:8000/fcal/api/notice
     </blockquote>
     <pre class="highlight shell">curl http://127.0.0.1/notice?page<span class="o">=</span>1
 </pre>
+    <blockquote class="highlight shell">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text="curl http://127.0.0.1/notice?page=1
+" href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight python"><span class="kn">import</span> <span class="nn">requests</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="p">)</span>
 </pre>
+    <blockquote class="highlight python">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='import requests
+r = requests.get("http://127.0.0.1/notice?page=1")
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <pre class="highlight java"><span class="n">HttpClient</span> <span class="n">httpclient</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
 <span class="n">HttpGet</span> <span class="n">httpget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpGet</span><span class="o">(</span><span class="s">"http://127.0.0.1/notice?page=1"</span><span class="o">);</span>
 <span class="n">HttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">httpclient</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">httpget</span><span class="o">);</span>
 </pre>
+    <blockquote class="highlight java">
+     <p>
+      <a class="clipboard" data-clipboard-action="copy" data-clipboard-text='HttpClient httpclient = new DefaultHttpClient();
+HttpGet httpget = new HttpGet("http://127.0.0.1/notice?page=1");
+HttpResponse response = httpclient.execute(httpget);
+' href="#">
+       copy
+      </a>
+     </p>
+    </blockquote>
     <h2 id="réponse---json">
      Réponse - JSON
     </h2>
@@ -1503,5 +1635,23 @@ http://qlemon.net:8000/fcal/api/notice
    <!-- dark-box -->
   </div>
   <!-- page-wrapper -->
+  <script>
+   var clipboard = new Clipboard('.clipboard');
+
+    clipboard.on('success', function(e) {
+
+        $(e.trigger).text('copied');
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+
+    $(".clipboard").click(function(e){
+        e.preventDefault();
+    });
+  </script>
  </body>
 </html>
