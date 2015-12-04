@@ -856,6 +856,10 @@ html,body {
     border-bottom: dashed 1px #ccc;
 }
 
+.content pre a,.content blockquote .clipboard{
+    border-bottom: none;
+}
+
 .content blockquote>p {
     background-color: #1c1c1c;
     border-radius: 5px;
@@ -913,4 +917,19 @@ html,body {
     .content>pre+h1,.content>blockquote+h1,.content>pre+h2,.content>blockquote+h2,.content>pre+h3,.content>blockquote+h3,.content>pre+h4,.content>blockquote+h4,.content>pre+h5,.content>blockquote+h5,.content>pre+h6,.content>blockquote+h6,.content>pre+p,.content>blockquote+p,.content>pre+table,.content>blockquote+table,.content>pre+ul,.content>blockquote+ul,.content>pre+ol,.content>blockquote+ol,.content>pre+aside,.content>blockquote+aside,.content>pre+dl,.content>blockquote+dl {
         margin-top: 28px;
     }
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
