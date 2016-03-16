@@ -8,7 +8,6 @@
    API Document
   </title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <link href="./css/hack-extended.min.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="./css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link href="./images/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -86,9 +85,7 @@
   </a>
   <div class="tocify-wrapper">
    <a class="api-title" href="/">
-    <h2>
-     API Document
-    </h2>
+    <img src="./images/logo.png"/>
    </a>
    <div class="lang-selector">
     <a data-language-name="shell" href="#">
@@ -540,6 +537,9 @@ HttpResponse response = httpclient.execute(httpget);
       </tr>
      </tbody>
     </table>
+    <aside class="success">
+     Success, return HTTP Status code 200 OK.
+    </aside>
     <blockquote>
      <p>
       Response 200 OK
@@ -1768,9 +1768,9 @@ HttpResponse response = httpclient.execute(httpget);
    var clipboard = new Clipboard('.clipboard');
 
     clipboard.on('success', function(e) {
-
         $(e.trigger).text('copied');
         e.clearSelection();
+        window.setTimeout(function(){$(e.trigger).text('copy');}, 500);
     });
 
     clipboard.on('error', function(e) {
